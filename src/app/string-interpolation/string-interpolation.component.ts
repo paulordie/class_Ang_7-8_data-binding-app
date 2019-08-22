@@ -9,6 +9,12 @@ export class StringInterpolationComponent implements OnInit {
 
   firstname: string = 'Paulordie';
 
+   age = 100;
+  person: any = {
+    firstname: 'Paulo',
+    lastname: 'Correa'
+  }
+
   constructor() { }
 
   ngOnInit() {
