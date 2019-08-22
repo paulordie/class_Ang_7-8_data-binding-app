@@ -8,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class EventBindingComponent implements OnInit {
 
   buttonName = "Meu Botão";
+  i:number = 0;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  save(){
+    console.log("clicou aqui!");
+  }
+  increment(){
+    this.i++;
+    this.buttonName = "Foi clicado" + this.i + " time";
   }
 
 }

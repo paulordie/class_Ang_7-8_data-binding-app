@@ -1,5 +1,5 @@
 <p>event-binding works!</p>
 <section>
-    <button mat-button color="pimary">save</button>
-    <button mat-button color="warn">{{ buttonName }}</button>
+    <button mat-button color="pimary" (click)="save()">save</button>
+    <button mat-button color="warn"(click)="increment()">{{ buttonName }}</button>
 </section>
