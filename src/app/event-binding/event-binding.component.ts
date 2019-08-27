@@ -33,7 +33,7 @@ export class EventBindingComponent implements OnInit {
     }, 3000);
   }
   cbChange(event){
-    console.log(event);
+    console.log(event.checked);
   }
 
 }
