@@ -21,9 +21,27 @@
  </section>
 
  <section>
-<p>
-    <mat-checkbox  color="warn" (change)="cbChange($event)">Disable / Enable</mat-checkbox>
-</p>
-
+    <p>
+        <mat-card>
+             <mat-card-content>
+                <p>
+                    <mat-checkbox  color="warn" (change)="cbChange($event)">Disable / Enable</mat-checkbox>
+                </p>
+                    
+                    <mat-form-field>
+                        <mat-select matNativeControl required
+                            [disabled]="selectDisabled" (selectionChange)="selectionChange($event)">
+                            <mat-option value="1">Volvo</mat-option>
+                            <mat-option value="2">Saab</mat-option>
+                            <mat-option value="3">Mercedes</mat-option>
+                            <mat-option value="4">Audi</mat-option>
+                        </mat-select>
+            </mat-form-field>
+            </mat-card-content>
+            <!-- <mat-card-options> -->
+                <p>Selected option  {{  selectedOption }}</p>
+            <!-- </mat-card-options> -->
+        </mat-card>
+    </p>
  </section>
  
