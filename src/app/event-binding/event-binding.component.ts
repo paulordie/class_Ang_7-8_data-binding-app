@@ -32,5 +32,8 @@ export class EventBindingComponent implements OnInit {
       this.spinnerMode = "determinate";
     }, 3000);
   }
+  cbChange(event){
+    console.log(event);
+  }
 
 }
