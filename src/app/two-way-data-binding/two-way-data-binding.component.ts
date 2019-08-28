@@ -9,7 +9,14 @@ export class TwoWayDataBindingComponent implements OnInit {
 
   name1: string = "";
   name2: string = "";
-  
+
+client = {
+  firstName: "Paulo",
+  lastName: "Correa",
+  address: "Arueira Street",
+  age: 32
+};
+
   constructor() { }
 
   ngOnInit() {
