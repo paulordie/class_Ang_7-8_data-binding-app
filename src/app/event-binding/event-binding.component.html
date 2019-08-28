@@ -45,3 +45,17 @@
     </p>
  </section>
  
+ <section>
+     <mat-card-content>
+         <mat-form-field>
+             <input matInput placeholder="First name"
+             (input)="inputName=$event.target.value"
+             [value]="inputName"> 
+         </mat-form-field>
+         <!-- <mat-card-actions> -->
+             <br>
+              name:  {{ inputName }}
+         <!-- </mat-card-actions> -->
+         <br>
+     </mat-card-content>
+ </section>
